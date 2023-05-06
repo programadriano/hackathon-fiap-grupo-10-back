@@ -14,11 +14,6 @@ services:
         CLOUD_SQL_PASSWORD: 123456
         CLOUD_SQL_DATABASE_NAME: playlist
         DB_LOCAL_HOST: db
-
-  frontend:
-    image: "frontend"
-    ports:
-      - "3000:8080"
         
   db:
     image: "mysql:8.0"
