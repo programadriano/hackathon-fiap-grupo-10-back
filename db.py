@@ -10,7 +10,7 @@ from flask import jsonify
 
 
 db_user='playuser'
-db_password='123456'
+db_password=123456
 db_local_host='db'
 db_name='playlist'
 db_connection_name= ''
