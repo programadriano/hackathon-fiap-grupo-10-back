@@ -13,7 +13,7 @@ db_user='playuser'
 db_password=123456
 db_local_host='db'
 db_name='playlist'
-db_connection_name= ''
+db_connection_name= 'teste'
 
 def open_connection():
     try:
