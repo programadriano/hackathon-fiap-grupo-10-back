@@ -12,7 +12,7 @@ db_connection_name = os.environ.get('CLOUD_SQL_CONNECTION_NAME')
 
 # db_user='playuser'
 # db_password='123456'
-db_local_host=db_local_host +':3306'
+#db_local_host=db_local_host +':3306'
 # db_name='playlist'
 
 def open_connection():
@@ -27,7 +27,7 @@ def open_connection():
         else:
             print ('oi')
             conn = pymysql.connect(user=db_user, password=db_password,
-                                host=db_local_host, db=db_name,cursorclass=pymysql.cursors.DictCursor)
+                                host=db_local_host,port='3306' db=db_name,cursorclass=pymysql.cursors.DictCursor)
 
     except pymysql.MySQLError as e:
         print(e)
